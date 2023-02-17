@@ -10,9 +10,10 @@
     --text-white: #ffffff;
     --background-primary: #F4F4FD;
     --background-secondary: #E7E9FC;
+    --customers: #8E8F99
 }
 
-/* WEBSTUDIO and Portfolio html styles fprmatting  */
+/* WEBSTUDIO and Portfolio html styles formatting  */
 /* Utilites */
 
 body {
@@ -138,7 +139,10 @@ p {
 }
 
 .nav-link:hover,
-.nav-link:focus,
+.nav-link:focus {
+    color: var(--btn-accent)
+}
+
 .address-link:hover,
 .address-link:focus {
     color: var(--btn-accent);
@@ -150,7 +154,9 @@ p {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-color: var(--primary-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background-image.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -236,6 +242,19 @@ p {
     margin-right: 24px;
 }
 
+.feture-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--background-primary);
+    margin-bottom: 8px;
+
+}
+
+.feture-icon-item {}
+
 .feature-item:nth-child(4n) {
     margin: 0;
 }
@@ -304,11 +323,70 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color-secondary);
+    margin-bottom: 8px;
 }
 
 .team-list .section-subtitle,
 .team-list .team-desc {
     text-align: center;
+}
+
+.team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+
+.team-socials-item {}
+
+.team-socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--btn-primary);
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+    background-color: var(--btn-accent);
+}
+
+.team-socials-icon {
+    fill: var(--background-secondary);
+}
+
+/* section 5 */
+
+.customer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.customer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--customers);
+    border-radius: 4px;
+    margin-right: 24px;
+
+}
+
+.customer-list:nth-last-child(5n) {
+    margin: 0;
+}
+
+.customer-list-icon {
+    fill: var(--customers);
 }
 
 /* footer */
@@ -326,6 +404,7 @@ p {
 }
 
 .footer-text {
+
     width: 264px;
     margin-top: 16px;
     line-height: 1.5;
@@ -415,6 +494,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 
 
