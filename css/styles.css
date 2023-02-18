@@ -370,11 +370,13 @@ p {
 
 .customer {
     display: flex;
-    justify-content: center;
-    color: var(--btn-accent);
-}
+    }
 
 .customer-list {
+    display: flex;
+}
+
+.customer-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,9 +392,10 @@ p {
     margin-right: 24px;
 }
 
-.customer-list:hover,
-.customer-lis:focus {
+.customer-list-link:hover,
+.customer-lis-link:focus {
     border: 1px solid var(--btn-accent);
+
 }
 
 .customer-list-icon:hover,
