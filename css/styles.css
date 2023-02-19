@@ -398,8 +398,7 @@ p {
 }
 
 .customer-list-link:hover,
-.customer-lis-link:focus,
-.customer-list-icon:focus {
+.customer-lis-link:focus {
     color: var(--btn-accent);
     border: 1px solid var(--btn-accent);
 }
